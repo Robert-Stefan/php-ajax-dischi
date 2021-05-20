@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AJAX-Spotify</title>
+        <!--VUE-->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <!--CSS-->
+        <link rel="stylesheet" href="./css/main.css" />
+    </head>
+    <body>
+        <div id="app">
+            <!--HEADER-->
+            <header>
+                <section class="container">
+                    <img class="logo" src="./img/logo.png" alt="logo" />
+                </section>
+            </header>
+
+            <!--MAIN CONTENT-->
+            <main>
+                <section class="content">
+                    <div v-for="list in music" class="dischi">
+                        <img :src="list.poster" alt="disco" />
+                        <h3>{{ list.title }}</h3>
+                        <p class="titles">{{ list.author }}</p>
+                        <p>{{ list.year }}</p>
+                        <p class="titles">{{ list.genre }}</p>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <!--JS & AXIOS-->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="./js/script.js"></script>
+    </body>
+</html>
