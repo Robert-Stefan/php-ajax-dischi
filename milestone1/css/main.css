@@ -1,0 +1,80 @@
+/* GENERAL */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* HEADER */
+header {
+    background: #132431;
+    padding: 10px;
+}
+
+.logo {
+    width: 40px;
+    cursor: pointer;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+/* MAIN CONTENT */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-content: space-around;
+}
+
+h3 {
+    font-size: 17px;
+}
+
+.titles {
+    font-size: 13px;
+}
+
+main {
+    height: 93.2vh;
+    background-color: #182d3d;
+}
+
+.dischi {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    cursor: pointer;
+    width: 250px;
+    height: 280px;
+    margin-top: 50px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    color: #fff;
+    background: #132431f5;
+    transition: 0.2s;
+}
+
+.dischi img {
+    padding-bottom: 10px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.dischi p {
+    padding: 4px;
+}
+
+.dischi:hover {
+    transform: scale(1.05);
+}

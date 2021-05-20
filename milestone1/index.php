@@ -2,6 +2,7 @@
     require_once __DIR__ . './database.php';
 ?>
 
+<!--HTML-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,13 +10,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP-Spotify</title>
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
 
     <!--HEADER-->
     <header>
         <section class="container">
-            <img src="./img/logo.png" alt="logo">           
+            <img class="logo" src="./img/logo.png" alt="logo">           
         </section>
     </header>
 
